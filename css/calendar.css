@@ -4,7 +4,7 @@ body {
 
 .calendar-container {
   width: 600px;
-  margin-left: 38px; /* 왼쪽 정렬 */
+  margin-left: 100px; /* 왼쪽 정렬 */
   margin-top: 100px;
 }
 
