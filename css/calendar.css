@@ -1,0 +1,59 @@
+body {
+  font-family: "Galmuri14", sans-serif;
+}
+
+.calendar-container {
+  width: 600px;
+  margin-left: 100px; /* 왼쪽 정렬 */
+  margin-top: 100px;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: center;
+  column-gap: 23px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.calendar-container-grid {
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* 7열로 설정 */
+  text-align: center;
+  padding-bottom: 20px; /* 날짜와 요일의 간격을 줄임 */
+}
+
+.calendar-dates {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* 7열로 설정 */
+  grid-gap: 5px; /* 날짜 셀 간의 간격 설정 */
+}
+
+.date {
+  width: 80%; /* 유지 */
+  height: 64px;
+  display: flex;
+  flex-direction: column; /* 수직 방향 정렬 */
+  justify-content: flex-start; /* 상단 정렬 */
+  align-items: center; /* 중앙 정렬 */
+  padding-top: 5px; /* 상단 여백 추가 */
+  cursor: pointer;
+  border-radius: 6px;
+  transition: height 0.3s ease; /* 부드러운 전환 */
+  margin: 0 auto; /* 중앙 정렬 */
+}
+
+.date:hover {
+  background-color: #FFAA7A;
+  color: #fff;
+}
+
+#prevBtn, #nextBtn {
+  width: 25px;
+  height: 28px;
+}
