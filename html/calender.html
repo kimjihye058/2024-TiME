@@ -39,7 +39,7 @@
 
     <header>
         <div class="encourage"><span id="user-name">김지혜</span> 님 잘하고 계세요!</div>
-        <div class="meal-time-increase">식사 시간이 저번 주보다 <span id="color">약 </span><span id="meal-time">6분 </span><span id="increase">증가</span>했어요</div>
+        <div class="meal-time-increase">식사 시간이 저번 주보다 <span class="color">약 </span><span id="meal-time">6분 </span><span id="increase">증가</span>했어요</div>
     </header>
 
     <div class="section-container">
@@ -64,20 +64,27 @@
         </div>
 
         <div class="time-container">
+            <div class="time" id="y-m-d"></div>
+            <div class="time hidden" id="meal-text">
+                <span id="repast">점심</span>식사 시간이 어제보다
+                <span class="color space">약 </span>
+                <span id="yesterday-min" class="space">7분 </span>
+                <span id="yesterday-increase" class="space">증가</span> 했어요
+            </div>
             <div class="time">
                 <label for="breakfast">아침 :</label>
                 <textarea id="breakfast"></textarea>
-                <textarea id="breakfast"></textarea>
+                <textarea id="breakfast" placeholder="기록이 되지 않았어요"></textarea>
             </div>
             <div class="time">
                 <label for="lunch">점심 :</label>
                 <textarea id="lunch"></textarea>
-                <textarea id="lunch"></textarea>
+                <textarea id="lunch" placeholder="기록이 되지 않았어요"></textarea>
             </div>
             <div class="time">
                 <label for="dinner">저녁 :</label>
                 <textarea id="dinner"></textarea>
-                <textarea id="dinner"></textarea>
+                <textarea id="dinner" placeholder="기록이 되지 않았어요"></textarea>
             </div>
         </div>
     </div>
