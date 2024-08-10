@@ -1,0 +1,52 @@
+.footer-container {
+    border-top: 2px solid #909090;
+    display: flex;
+    justify-content: space-between;
+}
+
+.TIME {
+    margin-left: 2%;
+}
+
+.sns {
+    margin-right: 20%;
+}
+
+.title {
+    font-size: 18px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.fontsz {
+    color: #646464;
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 1231px) {
+    .footer-container {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .TIME, .customer-service {
+        width: 48%; /* 두 섹션을 2단으로 배치 */
+    }
+
+    .sns {
+        width: 100%; /* 마지막 섹션은 100%로 배치 */
+        margin-top: 20px;
+        margin-left: 2%;
+    }
+}
+
+@media screen and (max-width: 819px) {
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .TIME, .customer-service, .sns {
+        width: 100%; /* 작은 화면에서는 모두 100%로 배치 */
+        margin-left: 10%;
+    }
+}
