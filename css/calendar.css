@@ -1,4 +1,4 @@
-body {
+header,.section-container {
   font-family: "Galmuri14", sans-serif;
 }
 
@@ -81,6 +81,7 @@ header {
   display: flex;
   align-items: flex-start;
   margin-left: 100px; /* 캘린더와 텍스트 영역 사이 여백 */
+  margin-bottom: 7rem;
 }
 
 .calendar-container {
