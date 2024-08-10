@@ -47,9 +47,9 @@ body {
   margin: 0 auto; /* 중앙 정렬 */
 }
 
-.date:hover {
+.selected {
   background-color: #FFAA7A;
-  color: #fff;
+  color: white;
 }
 
 #prevBtn, #nextBtn {
@@ -73,13 +73,13 @@ header {
   font-size: 15px;
 }
 
-#color, #meal-time {
+.color, #meal-time, #yesterday-min {
   color: #FFAA7A;
 }
 
 .section-container {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   margin-left: 100px; /* 캘린더와 텍스트 영역 사이 여백 */
 }
 
@@ -94,12 +94,16 @@ header {
   border-radius: 10px;
   border: 1px solid #000;
   margin-left: 5%;
+  margin-top: 50px;
+}
+
+#meal-text {
+  font-size: 13px;
 }
 
 .time {
   display: flex;
   align-items: center; /* 수평 정렬 */
-  padding: 20px;
   margin-left: 10%;
 }
 
@@ -120,6 +124,18 @@ header {
 
 .time > textarea:focus {
   border-bottom: 2px solid #C0C0C0; /* 포커스 상태에서 아래 선만 나타나도록 설정 */
+}
+
+.hidden {
+  display: none;
+}
+
+#y-m-d {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+.space {
+  margin-left: 5px;
 }
 
 @media screen and (max-width: 600px) {
