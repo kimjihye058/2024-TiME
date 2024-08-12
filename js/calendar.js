@@ -20,17 +20,25 @@ document.addEventListener('DOMContentLoaded', function() {
         let firstDay = new Date(year, month, 1).getDay();
         let lastDate = new Date(year, month + 1, 0).getDate();
 
+        // 빈 칸 추가
         for (let i = 0; i < firstDay; i++) {
             const emptyCell = document.createElement('div');
             emptyCell.classList.add('date');
             calendarDates.appendChild(emptyCell);
         }
 
+        // 날짜 셀 추가
         for (let i = 1; i <= lastDate; i++) {
             const dateCell = document.createElement('div');
             dateCell.classList.add('date');
-            dateCell.innerText = i;
 
+            // 20.5와 같은 작은 숫자 생성 (여기서는 무작위로 예시 생성)
+            const smallNumber = (Math.random() * 30).toFixed(1); // 0 ~ 30 사이의 소수점 1자리 숫자 생성
+
+            // 큰 날짜 숫자와 작은 숫자 추가
+            dateCell.innerHTML = `<div>${i}</div><div class="small-number">${smallNumber}</div>`;
+
+            // 날짜 클릭 이벤트 추가
             dateCell.addEventListener('click', function() {
                 if (selectedDate) {
                     selectedDate.classList.remove('selected');
