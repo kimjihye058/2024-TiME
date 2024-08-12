@@ -1,53 +1,37 @@
-const appendTens = document.getElementById("tens");
-const appendSeconds = document.getElementById("seconds");
-const btnStart = document.getElementById("btn-Start");
-const btnStop = document.getElementById("btn-Stop");
-const btnReset = document.getElementById("btn-Reset");
+var stTime = 0
+var endTime = 0
+var timerStart 
 
-let seconds = 0;
-let tens = 0;
-let Interval;
+var min
+var sec
+var milisec 
 
-btnStart.onclick = function () {
-  // 기존에 있던 setInterval 없애고
-  clearInterval(Interval);
+var startBtn = document.getElementById('testStartBtn')
+var stopBtn = document.getElementById('testStopBtn') 
 
-  Interval = setInterval(startTimer, 10);
-};
-
-btnStop.onclick = function () {
-  clearInterval(Interval);
-};
-
-btnReset.onclick = function () {
-  clearInterval(Interval);
-
-  seconds = 0;
-  tens = 0;
-
-  appendSeconds.innerHTML = seconds;
-  appendTens.innerHTML = tens;
-};
-
-function startTimer() {
-  tens++;
-
-  if (tens <= 9) {
-    appendTens.innerHTML = tens;
-  }
-
-  if (tens > 9) {
-    appendTens.innerHTML = tens;
-  }
-
-  // tens가 99보다 클 때
-  if (tens > 99) {
-    //  seconds 1 올리고
-    seconds++;
-    // appendSeconds에도 반영하기
-    appendSeconds.innerHTML = seconds;
-    // tens appendTens 0으로
-    tens = 0;
-    appendTens.innerHTML = 0;
-  }
-}
+startBtn.addEventListener('click', function() {	
+    if(!stTime) {		
+        stTime = Date.now()	// 처음 시작할 때	
+    } 
+    else {		
+        stTime += (Date.now() - endTime)	// 재시작할 때	
+    }		
+    
+    timerStart = setInterval(function() {		
+        var nowTime = new Date(Date.now() - stTime) 		
+        min = addZero(nowTime.getMinutes())		
+        sec = addZero(nowTime.getSeconds())		
+        milisec = addZero(Math.floor(nowTime.getMilliseconds() / 10)) 		
+        document.getElementById('postTestMin').innerText = min		
+        document.getElementById('postTestSec').innerText = sec		
+        document.getElementById('postTestMilisec').innerText = milisec	}, 1)
+    }) 
+    
+    stopBtn.addEventListener('click', function() {	
+        if(timerStart) {		
+            clearInterval(timerStart)		
+            endTime = Date.now()	// STOP시점의 시간 저장	
+        }
+    }) 
+        
+function addZero(num) {	return (num < 10 ? '0'+num : ''+num)}
