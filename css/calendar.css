@@ -34,22 +34,33 @@ header,.section-container {
 }
 
 .date {
-  width: 80%; /* 유지 */
-  height: 64px;
+  width: 80%;
+  height: 64px; /* 기존 높이를 유지 */
   display: flex;
   flex-direction: column; /* 수직 방향 정렬 */
-  justify-content: flex-start; /* 상단 정렬 */
+  justify-content: center; /* 중앙 정렬 */
   align-items: center; /* 중앙 정렬 */
   padding-top: 5px; /* 상단 여백 추가 */
   cursor: pointer;
   border-radius: 6px;
   transition: height 0.3s ease; /* 부드러운 전환 */
   margin: 0 auto; /* 중앙 정렬 */
+  position: relative; /* 상대적 위치 설정 */
+}
+
+.date .small-number {
+  font-size: 10px;
+  color: black;
+  margin-top: 10px; /* 날짜 아래에 위치하도록 위쪽 여백 추가 */
 }
 
 .selected {
   background-color: #FFAA7A;
   color: white;
+}
+
+.selected .small-number {
+  color: white; /* 작은 숫자의 색깔도 변경 */
 }
 
 #prevBtn, #nextBtn {
@@ -139,17 +150,88 @@ header {
   margin-left: 5px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1249px) {
+
   .section-container {
-    flex-direction: column; /* 작은 화면에서는 세로 정렬 */
-    margin-left: 0; /* 작은 화면에서는 왼쪽 마진 제거 */
+    display: flex;
+    flex-direction: column;
+    
   }
 
   .calendar-container {
-    margin-right: 0; /* 작은 화면에서는 오른쪽 마진 제거 */
+    margin: 0 auto;
+    width: 80%;
+    margin-bottom: 40px;
+    margin-left: 0;
+    
   }
 
   .time-container {
-    width: 100%; /* 작은 화면에서는 텍스트 영역의 너비를 100%로 조정 */
+    margin: 0 auto;
+    width: 80%;
+    margin-left: 0;
+  }
+
+  .encourage {
+    font-size: 22px;
+  }
+
+  .meal-time-increase {
+    font-size: 14px;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 935px) {
+
+  .section-container {
+    margin-left: 0;
+  }
+
+  .calendar-container {
+   margin: 0 auto;
+   width: 80%;
+   margin-bottom: 40px;
+  }
+
+  .time-container {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .encourage {
+    font-size: 20px;
+  }
+
+  .meal-time-increase {
+    font-size: 12px;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 935px) {
+
+  .section-container {
+    margin-left: 0;
+  }
+
+  .calendar-container {
+   margin: 0 auto;
+   width: 80%;
+   margin-bottom: 40px;
+  }
+
+  .time-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .encourage {
+    font-size: 18px;
+  }
+
+  .meal-time-increase {
+    font-size: 13px;
+    width: 80%;
   }
 }
