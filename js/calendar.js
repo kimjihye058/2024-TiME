@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const nextBtn = document.getElementById('nextBtn');
     const ymd = document.getElementById('y-m-d');
     const mealText = document.getElementById('meal-text');
+    const xbuttton = document.getElementById('x-button');
 
     let date = new Date();
     let year = date.getFullYear();
@@ -51,6 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 ymd.innerText = `${year}년 ${month + 1}월 ${i}일 ${dayOfWeek}`;
                 mealText.classList.remove('hidden');
+                xbuttton.style.display = "block";
             });
 
             calendarDates.appendChild(dateCell);
