@@ -1,3 +1,53 @@
 section {
     font-family: "Galmuri14", sans-serif;
+    margin-bottom: 7rem;
+}
+
+.stopwatch-container {
+    font-size: 40px;
+    text-align: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+#character > img {
+    width: 13%;
+}
+
+#character-gif {
+    margin-top: 80px;
+    display: none;
+}
+
+button {
+    position: relative;
+    border: 0;
+    background-color: transparent;
+    padding: 0;
+}
+
+button img {
+    width: 60%;
+    height: 100%;
+    object-fit: cover; /* 이미지가 버튼 크기에 맞게 조절되도록 설정 */
+}
+
+
+.startend-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.btn-text {
+    font-family: "Galmuri14", sans-serif;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black; /* 텍스트 색상 설정 */
+    font-size: 1rem; /* 글자 크기 조절 */
+    pointer-events: none; /* 버튼 클릭 시 텍스트가 클릭되지 않도록 설정 */
+    z-index: 1;
+    font-size: 14px;
 }
