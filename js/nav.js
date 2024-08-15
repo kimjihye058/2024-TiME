@@ -15,6 +15,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // X 아이콘 클릭 시 메뉴 닫기
     toggleX.addEventListener('click', function() {
         info.classList.remove('show-menu');
+        for(let i = 0; i < 2; i++) {
+            document.getElementsByClassName('nav-info')[i].style.color = '#fff';
+        }
     });
 
 
