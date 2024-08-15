@@ -17,3 +17,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         });
     });
 });
+
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+    window.location.href = '../html/stopwatch.html'; // 원하는 메인 페이지 경로로 변경
+});
