@@ -1,5 +1,11 @@
-.footer-container {
+footer {
     border-top: 2px solid #909090;
+    width: 100%;
+}
+
+.footer-container {
+    width: 80%;
+    
     display: flex;
     justify-content: space-between;
     margin-bottom: 80px;

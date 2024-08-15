@@ -43,6 +43,7 @@
     .menu {
         display: block;
         width: 15px;
+        
     }
     .menu > img {
         width: 20px;
@@ -61,10 +62,9 @@
         overflow: hidden;
         max-height: 0;
     }
-    #info.show-menu {
-        height: 100%;
-        max-height: 100%; /* 높이를 늘려 240px로 설정 */
-        z-index: 1; /* 메뉴가 보이도록 z-index 조정 */
+    #info.show-menu {   
+        max-height: 100vh;
+        z-index: 100; /* 메뉴가 보이도록 z-index 조정 */
     }
     .nav-info {
         border-bottom: 1px solid #774924;
