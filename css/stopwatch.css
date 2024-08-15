@@ -3,6 +3,8 @@ section {
     margin-bottom: 7rem;
 }
 
+
+
 .stopwatch-container {
     font-size: 40px;
     text-align: center;
@@ -16,7 +18,7 @@ section {
 }
 
 #character-gif {
-    margin-top: 114px;
+    margin-top: 80px;
     display: none;
 }
 
@@ -51,4 +53,10 @@ button img {
     pointer-events: none; /* 버튼 클릭 시 텍스트가 클릭되지 않도록 설정 */
     z-index: 1;
     font-size: 14px;
+}
+
+@media screen and (max-heigth: 1241px) {
+    #character > img {
+        width: 100%;
+    }
 }
