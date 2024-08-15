@@ -10,12 +10,13 @@ section {
     margin-top: 80px;
 }
 
-#character > img {
-    width: 13%;
+#character{
+    margin: 0 auto;
+    width: 80%;
 }
 
 #character-gif {
-    margin-top: 80px;
+    margin-top: 114px;
     display: none;
 }
 
