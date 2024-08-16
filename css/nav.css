@@ -1,6 +1,22 @@
+body {
+    width: 100%;
+    position: relative;
+}
+
+#blur {
+    /* backdrop-filter: blur(4px); */
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.2);
+    position: fixed;
+    z-index: 99;
+    display: none;
+}
+
 .nav {
     font-family: "Galmuri14", sans-serif;
     background-color: #FFA459;
+    width: 100%;
 }
 
 .nav-container {
@@ -63,7 +79,7 @@
         max-height: 0;
     }
     #info.show-menu {   
-        max-height: 100vh;
+        max-height: 100%;
         z-index: 100; /* 메뉴가 보이도록 z-index 조정 */
     }
     .nav-info {

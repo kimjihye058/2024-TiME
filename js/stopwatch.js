@@ -40,28 +40,28 @@ stopBtn.addEventListener('click', function() {
         endTime = Date.now();	// STOP 시점의 시간 저장
 
         // 정지 시간을 서버로 전송
-        const stopTime = {
-            minutes: min,
-            seconds: sec,
-            milliseconds: milisec,
-            timestamp: endTime
-        };
+    //     const stopTime = {
+    //         minutes: min,
+    //         seconds: sec,
+    //         milliseconds: milisec,
+    //         timestamp: endTime
+    //     };
 
-        fetch('', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ stopTime }),
-        })
-        .then(response => response.json())
-        .then(data => {
-            console.log('서버 응답:', data.message);
-        })
-        .catch((error) => {
-            console.error('서버 전송 중 오류 발생:', error);
-        });
-    }
+    //     fetch('', {
+    //         method: 'POST',
+    //         headers: {
+    //             'Content-Type': 'application/json',
+    //         },
+    //         body: JSON.stringify({ stopTime }),
+    //     })
+    //     .then(response => response.json())
+    //     .then(data => {
+    //         console.log('서버 응답:', data.message);
+    //     })
+    //     .catch((error) => {
+    //         console.error('서버 전송 중 오류 발생:', error);
+    //     });
+     }
 
     character.style.display = "block";  // character를 표시
     charactergif.style.display = "none";  // gif를 숨김
