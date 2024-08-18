@@ -3,6 +3,7 @@ section {
     font-size: 20px;
     display: flex;
     justify-content: space-around;
+    margin-bottom: 7rem;
 }
 
 .user {
@@ -12,6 +13,7 @@ section {
     margin-top: 8rem;
     justify-content: center;
     align-items: center;
+    margin-left: 10rem;
 }
 
 .user > img {
@@ -53,20 +55,29 @@ section {
   font-family: "Galmuri14", sans-serif;
 }
 
+.item-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 5%;
+}
+
 .section-menu-container {
     margin-top: 3rem;
     display: flex;
-    gap: 10px;
+    margin-bottom: 3rem;
+    margin-left: 14.9%;
 }
 
 .section-menu {
     position: relative;
     margin-right: 10px;
+    padding-bottom: 10px;
 }
 
 .section-menu > span {
     position: absolute;
-    top: 50%;
+    top: 43%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: black; /* 텍스트 색상 설정 */
@@ -74,3 +85,74 @@ section {
     z-index: 1;
     font-size: 17px;
 }
+
+
+.item-section-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6개의 동일한 너비 열을 생성 */
+    gap: 10px; /* 아이템 간의 간격 조정 */
+    width: 80%;
+    margin-left: 10rem;
+}
+
+.item-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item-section > img {
+    width: 100%; /* 이미지가 부모 요소의 너비에 맞게 조정 */
+    height: auto; /* 이미지의 높이 자동 조정 */
+}
+
+.item-info {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+.item-name {
+    font-size: 16px;
+    margin-bottom: 5px; /* 아이템 이름과 Basic 사이의 간격 조정 */
+}
+
+
+.item-name {
+    position: absolute;
+    top: 580%; /* 이미지의 상단에 텍스트 배치 */
+    left: 50%;
+    transform: translateX(-50%); /* 텍스트 중앙 정렬 */
+    font-size: 15px;
+}
+
+.basic {
+    position: absolute;
+    top: 660%; /* 이미지의 하단에 텍스트 배치 */
+    left: 50%;
+    transform: translateX(-50%); /* 텍스트 중앙 정렬 */
+    font-size: 14px;
+    color: #8B4823; /* 텍스트가 보이도록 흰색 설정 */
+}
+
+.special {
+    position: absolute;
+    top: 660%; /* 이미지의 하단에 텍스트 배치 */
+    left: 50%;
+    transform: translateX(-50%); /* 텍스트 중앙 정렬 */
+    font-size: 14px;
+    color: #265BAC; /* 텍스트가 보이도록 흰색 설정 */
+}
+
+.section-menu.active {
+    border-bottom: 3px solid #FFBF8D; /* 원하는 border 스타일로 변경 가능 */
+}
+
+
+.accessories {
+    display: none;
+}
+
+
+
