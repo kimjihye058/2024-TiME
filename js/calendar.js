@@ -5,12 +5,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const nextBtn = document.getElementById('nextBtn');
     const ymd = document.getElementById('y-m-d');
     const mealText = document.getElementById('meal-text');
-    const xbuttton = document.getElementById('x-button');
+    const xButton = document.getElementById('x-button');
 
     let date = new Date();
     let year = date.getFullYear();
     let month = date.getMonth();
     let selectedDate = null;
+    let selectedDateNumber = null; // 선택된 날짜의 숫자 저장
 
     const daysOfWeek = ['일요일', '월요일', '화요일', '수요일', '목요일', '금요일', '토요일'];
 
@@ -46,13 +47,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
                 dateCell.classList.add('selected');
                 selectedDate = dateCell;
+                selectedDateNumber = i; // 선택된 날짜 숫자 저장
 
                 const clickedDate = new Date(year, month, i);
                 const dayOfWeek = daysOfWeek[clickedDate.getDay()];
 
                 ymd.innerText = `${year}년 ${month + 1}월 ${i}일 ${dayOfWeek}`;
                 mealText.classList.remove('hidden');
-                xbuttton.style.display = "block";
+                xButton.style.display = "block";
             });
 
             calendarDates.appendChild(dateCell);
@@ -67,6 +69,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         renderCalendar();
         mealText.classList.add('hidden'); // 이전/다음 클릭 시 숨기기
+        xButton.style.display = "none"; // X 버튼 숨기기
+        ymd.innerText = ''; // 선택된 날짜 표시 초기화
     });
 
     nextBtn.addEventListener('click', () => {
@@ -77,6 +81,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         renderCalendar();
         mealText.classList.add('hidden'); // 이전/다음 클릭 시 숨기기
+        xButton.style.display = "none"; // X 버튼 숨기기
+        ymd.innerText = ''; // 선택된 날짜 표시 초기화
     });
 
     renderCalendar();
