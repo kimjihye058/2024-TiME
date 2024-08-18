@@ -52,6 +52,7 @@ body {
 }
 .character-information {
     display: none;
+    margin-left: 5%;
 }
 
 
