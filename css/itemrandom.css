@@ -10,7 +10,7 @@ section {
     width: 15%;
     display: flex;
     flex-direction: column;
-    margin-top: 8rem;
+    margin-top: 1rem;
     justify-content: center;
     align-items: center;
     margin-left: 10rem;
@@ -29,14 +29,13 @@ section {
 
 #user-name {
     margin-top: 20px;
+    margin-bottom: 10px;
 }
 
-.center {
+.user-information {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
-    gap: 20px;
 }
 
 #img {
@@ -44,8 +43,8 @@ section {
 }
 
 .memo > textarea {
-    width: 60vh;
-    height: 15vh;
+    width: 20rem;
+    height: 100%;
     font-size: 16px;
   border: 1px solid black;
   border-radius: 10px; 
@@ -65,14 +64,19 @@ section {
 .section-menu-container {
     margin-top: 3rem;
     display: flex;
+    justify-content: flex-start;
     margin-bottom: 3rem;
-    margin-left: 14.9%;
+    margin-left: 10rem;
+    gap: 10px;
 }
 
 .section-menu {
     position: relative;
-    margin-right: 10px;
     padding-bottom: 10px;
+}
+
+.section-menu > img {
+    width: 100%;
 }
 
 .section-menu > span {
@@ -80,20 +84,21 @@ section {
     top: 43%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: black; /* 텍스트 색상 설정 */
-    pointer-events: none; /* 버튼 클릭 시 텍스트가 클릭되지 않도록 설정 */
+    color: black;
+    pointer-events: none;
     z-index: 1;
     font-size: 17px;
 }
 
-
 .item-section-container {
     display: grid;
-    grid-template-columns: repeat(6, 1fr); /* 6개의 동일한 너비 열을 생성 */
-    gap: 10px; /* 아이템 간의 간격 조정 */
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
     width: 80%;
     margin-left: 10rem;
 }
+
+
 
 .item-section {
     position: relative;
@@ -108,9 +113,9 @@ section {
 }
 
 .item-info {
-    position: absolute;
     width: 100%;
     text-align: center;
+    height: 100%;
 }
 
 .item-name {
@@ -121,28 +126,24 @@ section {
 
 .item-name {
     position: absolute;
-    top: 580%; /* 이미지의 상단에 텍스트 배치 */
-    left: 50%;
-    transform: translateX(-50%); /* 텍스트 중앙 정렬 */
-    font-size: 15px;
+    top: 65%; /* 이미지 높이의 50% 위치 */
+    left: 50%; /* 이미지 너비의 50% 위치 */
+    transform: translate(-50%, -50%); /* 텍스트를 가로 및 세로 방향으로 중앙 정렬 */
+    font-size: 14px;
+    white-space: nowrap; /* 텍스트 줄바꿈 방지 */
 }
 
-.basic {
+.basic, .special {
     position: absolute;
-    top: 660%; /* 이미지의 하단에 텍스트 배치 */
+    top: 70%;
     left: 50%;
-    transform: translateX(-50%); /* 텍스트 중앙 정렬 */
+    transform: translateX(-50%); /* 텍스트를 가로 방향으로 중앙 정렬 */
     font-size: 14px;
-    color: #8B4823; /* 텍스트가 보이도록 흰색 설정 */
+    color: #8B4823; /* 기본 텍스트 색상 */
 }
 
 .special {
-    position: absolute;
-    top: 660%; /* 이미지의 하단에 텍스트 배치 */
-    left: 50%;
-    transform: translateX(-50%); /* 텍스트 중앙 정렬 */
-    font-size: 14px;
-    color: #265BAC; /* 텍스트가 보이도록 흰색 설정 */
+    color: #265BAC; /* 스페셜 텍스트 색상 */
 }
 
 .section-menu.active {
@@ -153,6 +154,101 @@ section {
 .accessories {
     display: none;
 }
+
+@media screen and (max-width: 1346px) {
+    section {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+
+    .user {
+        width: 20%;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+    .item-nav {
+        margin-left: 0;
+        align-items: center;
+    }
+
+    .user-info-container {
+        margin-bottom: 0;
+    }
+
+    .user-information {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .item-section-container {
+        margin-left: 0;
+        gap: 20px;
+        justify-content: center;
+        width: 90%;
+    }
+
+    .user > img {
+        margin-right: 1rem;
+    }
+
+    #user-name {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-right: 1rem;
+    }
+
+    .section-menu-container {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 634px) {
+
+    section {
+        
+    }
+
+    .user {
+        width: 80%;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+        margin-left: 0;
+    }
+    
+    .user > img {
+        margin-bottom: 10px;
+    }
+
+    .user-information {
+        width: 100%;
+        justify-content: center;
+        
+    }
+
+    .memo > textarea {
+        width: 90%;
+    }
+
+    .item-nav {
+        margin-right: 0;
+        align-items: center;
+    }
+
+    .item-section-container {
+        margin-left: 0;
+        gap: 10px;
+        justify-content: center;
+        width: 90%;
+    }
+}
+
 
 
 
