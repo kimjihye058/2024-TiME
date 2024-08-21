@@ -1,0 +1,27 @@
+.gender-title {
+    margin-top: 20px;
+}
+
+.radio {
+    display: flex;
+    flex-direction: column;
+}
+
+.radio label {
+    margin-top: 10px;
+}
+
+.age {
+    margin-top: 30px;
+}
+
+.age-title {
+    margin-bottom: 10px;
+}
+
+.age > select {
+    width: 50%;
+    height: 30px;
+    border-radius: 5px;
+}
+

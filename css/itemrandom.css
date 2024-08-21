@@ -17,7 +17,7 @@ section {
 }
 
 .user > img {
-    width: 130px;
+    width: 50%;
 }
 
 .user-info-container {
@@ -219,6 +219,7 @@ section {
     }
     
     .user > img {
+        width: 20%;
         margin-bottom: 10px;
     }
 
@@ -242,6 +243,14 @@ section {
         gap: 10px;
         justify-content: center;
         width: 90%;
+    }
+
+    .item-name, .basic, .special {
+        top:60%;
+        font-size: 9px;
+    }
+    .basic, .special {
+        top: 65%;
     }
 }
 
