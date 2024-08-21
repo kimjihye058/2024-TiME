@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/sign-up.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/galmuri/dist/galmuri.css">
 </head>
@@ -26,8 +27,31 @@
                     <img src="../img/Vector (2).png" alt="" class="input-show" style="display: none;">
                     <input type="password" placeholder="비밀번호">
                 </div>
-                <input type='submit' id="submit" value='로그인'>
-                <a href="../html/signup.html"><div class="sign-up">회원가입</div></a>
+                <div class="radio">
+                    <div>*기본 회원 정보 수집</div>
+                    <div class="gender-title">성별</div>
+                    <label for="boy">
+                        <input type="radio" id="boy" name = "gender" value="boy">
+                        남성
+                    </label>
+
+                    <label for="girl">
+                        <input type="radio" id="girl" name = "gender" value="girl">
+                        여성
+                    </label>
+                </div>
+
+                <div class="age">
+                    <div class="age-title">나이</div>
+                    <select name="" id="">
+                        <option value="" disabled selected>선택해주세요</option>
+                        <option value="">19살</option>
+                        <option value="">18살</option>
+                        <option value="">17살</option>
+                    </select>
+                </div>
+                <input type='submit' id="submit" value='회원가입'>
+                <a href="../html/login.html"><div class="sign-up">로그인</div></a>
             </div>
         </form>
     </section>

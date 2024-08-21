@@ -11,7 +11,8 @@ header {
     font-family: "Galmuri14", sans-serif;
     text-align: center;
     font-size: 48px;
-    margin-bottom: 38px;
+    margin-top: 10%;
+    margin-bottom: 40px;
 }
 
 section {
@@ -66,4 +67,10 @@ input:focus::placeholder {
     border: 1px solid #FFA459;
     background-color: #FFA459;
     border-radius: 6px;
+    margin-bottom: 20px;
+}
+.sign-up {
+    text-align: center;
+    font-size: 13px;
+    color: #ADADAD;
 }
