@@ -96,6 +96,7 @@ section {
     gap: 10px;
     width: 80%;
     margin-left: 10rem;
+    cursor:pointer ;
 }
 
 
@@ -253,11 +254,11 @@ section {
     }
 
     .item-name, .basic, .special {
-        top:60%;
+        top:70%;
         font-size: 9px;
     }
     .basic, .special {
-        top: 65%;
+        top: 75%;
     }
 }
 
