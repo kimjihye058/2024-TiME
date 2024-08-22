@@ -29,34 +29,3 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
-
-document.addEventListener('DOMContentLoaded', function () {
-    // 모든 item-section 요소를 선택합니다.
-    const itemSections = document.querySelectorAll('.item-section');
-    
-    // 마지막으로 클릭된 이미지의 정보를 저장할 변수를 선언합니다.
-    let lastClickedImg = null;
-    let originalSrc = ''; // 이전 이미지의 원래 src를 저장
-
-    // 각 item-section에 대해 클릭 이벤트 리스너를 추가합니다.
-    itemSections.forEach(function (section) {
-        section.addEventListener('click', function () {
-            // 클릭된 item-section 내부의 img 요소를 선택합니다.
-            const imgElement = section.querySelector('img');
-
-            // 이전에 클릭된 이미지가 있으면 원래 이미지로 복원합니다.
-            if (lastClickedImg && lastClickedImg !== imgElement) {
-                lastClickedImg.src = originalSrc;
-            }
-
-            // 현재 클릭된 이미지의 src를 저장합니다.
-            originalSrc = imgElement.src;
-
-            // 이미지를 새로운 이미지로 변경합니다.
-            imgElement.src = '../img/pixil-frame-0 (2) 7.png';
-
-            // 현재 이미지를 lastClickedImg로 설정합니다.
-            lastClickedImg = imgElement;
-        });
-    });
-});
