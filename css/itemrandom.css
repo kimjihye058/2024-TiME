@@ -118,6 +118,13 @@ section {
     height: 100%;
 }
 
+.item-info > img {
+    position: absolute;
+    width: 70%;
+    top: 2%;
+    left: 15%;
+}
+
 .item-name {
     font-size: 16px;
     margin-bottom: 5px; /* 아이템 이름과 Basic 사이의 간격 조정 */
@@ -126,7 +133,7 @@ section {
 
 .item-name {
     position: absolute;
-    top: 65%; /* 이미지 높이의 50% 위치 */
+    top: 70%; /* 이미지 높이의 50% 위치 */
     left: 50%; /* 이미지 너비의 50% 위치 */
     transform: translate(-50%, -50%); /* 텍스트를 가로 및 세로 방향으로 중앙 정렬 */
     font-size: 14px;
@@ -135,7 +142,7 @@ section {
 
 .basic, .special {
     position: absolute;
-    top: 70%;
+    top: 75%;
     left: 50%;
     transform: translateX(-50%); /* 텍스트를 가로 방향으로 중앙 정렬 */
     font-size: 14px;
