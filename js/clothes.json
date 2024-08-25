@@ -3,49 +3,57 @@
         "name" : "여자 한복",
         "rank" : "Basic",
         "item" : "여자한복.png",
-        "character" : "한복소녀.png"
+        "character" : "한복소녀.png",
+        "link" : "clothes"
     },
     {
         "name" : "남자 한복",
         "rank" : "Basic",
         "item" : "남자한복.png",
-        "character" : "한복소년.png"
+        "character" : "한복소년.png",
+        "link" : "clothes"
     },
     {
         "name" : "핑크 드레스",
         "rank" : "Basic",
         "item" : "여자양복.png",
-        "character" : "양복소녀.png"
+        "character" : "양복소녀.png",
+        "link" : "clothes"
     },
     {
         "name" : "턱시도",
         "rank" : "Basic",
         "item" : "남자양복.png",
-        "character" : "양복소년.png"
+        "character" : "양복소년.png",
+        "link" : "clothes"
     },
     {
         "name" : "고대 의상",
         "rank" : "Basic",
         "item" : "남자아테네.png",
-        "character" : "아테네소년.png"
+        "character" : "아테네소년.png",
+        "link" : "clothes"
     },
     {
         "name" : "고대 의상2",
         "rank" : "Basic",
         "item" : "여자아테네.png",
-        "character" : "아테네소녀.png"
+        "character" : "아테네소녀.png",
+        "link" : "clothes"
     },
     {
         "name": "곰 인형탈",
         "rank": "special",
         "item": "곰돌이탈.png",
-        "character": ["곰탈소녀.png", "곰탈소년.png"]
+        "character": ["곰탈소녀.png", "곰탈소년.png"],
+        "link" : "clothes"
     },
     {
         "name": "토끼 인형탈",
         "rank": "special",
         "item": "토끼탈.png",
-        "character": ["토끼탈소녀.png", "토끼탈소녀.png"]
+        "character": ["토끼탈소녀.png", "토끼탈소녀.png"],
+        "link" : "clothes"
     }
         
 ]
