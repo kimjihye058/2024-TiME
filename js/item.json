@@ -3,72 +3,84 @@
         "name": "리본 머리띠",
         "rank": "Basic",
         "item": "빨간머리띠.png",
-        "character": ["머리띠소녀.png", "머리띠소년.png"]
+        "character": ["머리띠소녀.png", "머리띠소년.png"],
+        "link": "items"
     },
     {
         "name": "곰 머리띠",
         "rank": "Basic",
         "item": "곰돌이머리띠.png",
-        "character": ["곰머리띠소녀.png", "곰머리띠소년.png"]
+        "character": ["곰머리띠소녀.png", "곰머리띠소년.png"],
+        "link": "items"
     },
     {
         "name": "꽃 모자",
         "rank": "Basic",
         "item": "유치원생모자.png",
-        "character": ["유치원소녀.png", "유치원소년.png"]
+        "character": ["유치원소녀.png", "유치원소년.png"],
+        "link": "items"
     },
     {
         "name": "새싹 모자",
         "rank": "Basic",
         "item": "새싹모자.png",
-        "character": ["새싹소녀.png", "새싹소년.png"]
+        "character": ["새싹소녀.png", "새싹소년.png"],
+        "link": "items"
     },
     {
         "name": "산타모자",
         "rank": "Basic",
         "item": "산타모자.png",
-        "character": ["산타소녀.png", "산타소년.png"]
+        "character": ["산타소녀.png", "산타소년.png"],
+        "link": "items"
     },
     {
         "name": "버섯모자",
         "rank": "Basic",
         "item": "버섯모자.png",
-        "character": ["버섯소녀.png", "버섯소년.png"]
+        "character": ["버섯소녀.png", "버섯소년.png"],
+        "link": "items"
     },
     {
         "name": "감귤 모자",
         "rank": "Basic",
         "item": "오렌지모자.png",
-        "character": ["오렌지소녀.png", "오렌지소년.png"]
+        "character": ["오렌지소녀.png", "오렌지소년.png"],
+        "link": "items"
     },
     {
         "name": "귀마개",
         "rank": "Basic",
         "item": "귀마개.png",
-        "character": ["귀마개소녀.png", "귀마개소년.png"]
+        "character": ["귀마개소녀.png", "귀마개소년.png"],
+        "link": "items"
     },
     {
         "name": "마녀 망토",
         "rank": "special",
         "item": "망토.png",
-        "character": ["망토소녀.png", "망토소년.png"]
+        "character": ["망토소녀.png", "망토소년.png"],
+        "link": "items"
     },
     {
         "name": "용사의 검",
         "rank": "special",
         "item": "검.png",
-        "character": ["검소녀.png", "검소년.png"]
+        "character": ["검소녀.png", "검소년.png"],
+        "link": "items"
     },
     {
         "name": "목도리",
         "rank": "special",
         "item": "목도리.png",
-        "character": ["목도리소녀.png", "목도리소년.png"]
+        "character": ["목도리소녀.png", "목도리소년.png"],
+        "link": "items"
     },
     {
         "name": "요술봉 ",
         "rank": "special",
         "item": "요술봉.png",
-        "character": ["요술봉소녀.png", "요술봉소년.png"]
+        "character": ["요술봉소녀.png", "요술봉소년.png"],
+        "link": "items"
     }
 ]

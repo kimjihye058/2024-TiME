@@ -11,7 +11,7 @@ const showData = (data, targetClass) => {
             <div class="item-section">
                 <img src="../img/pixil-frame-0 (2) 1.png" alt="">
                 <div class="item-info">
-                    <img src="../img/clothes/${element.item}" alt="">
+                    <img src="../img/${element.link}/${element.item}" alt="">
                     <span class="item-name">${element.name}</span>
                     <span class="basic" style="${textColor}">${element.rank}</span>
                 </div>
@@ -53,8 +53,7 @@ const getData = (url, targetClass) => {
         .catch((error) => console.log(error));
 };
 
-// 예시: clothes.json 데이터를 item-section-container에 표시
-getData('../js/clothes.json', 'item-section-container');
+getData('../js/clothes.json', 'clothes');
 
 // 예시: item.json 데이터를 accessories 섹션에 표시
 getData('../js/item.json', 'accessories');
