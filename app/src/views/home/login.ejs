@@ -1,14 +1,37 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/js/home/login.js"></script>
     <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/galmuri/dist/galmuri.css">
 </head>
 <body>
-    <input type="text" placeholder="아이디"><br>
-    <input type="text" placeholder="비밀번호"><br>
-    <button>로그인</button>
-
+    <header>
+        <p>Time</p>
+    </header>
+    <section>
+        <form id="loginForm" action="">
+            <div class="login">
+                <div class="input-wrapper">
+                    <img src="../img/Group 131 (2).png" alt="" class="input-show" style="display: none;">
+                    <img src="../img/Group 157.png" alt="" class="input-none">
+                    <input type="text" placeholder="아이디" id="username">
+                </div>
+                <div class="input-wrapper">
+                    <img src="../img/Vector (1).png" alt="" class="input-none">
+                    <img src="../img/Vector (2).png" alt="" class="input-show" style="display: none;">
+                    <input type="password" placeholder="비밀번호">
+                </div>
+                <input type='submit' id="submit" value='로그인'>
+                <a href="../html/signup.html"><div class="sign-up">회원가입</div></a>
+            </div>
+        </form>
+    </section>
+    <script src="../js/login.js"></script>
 </body>
 </html>
