@@ -6,7 +6,7 @@ const app = express();
 
 
 // 라우팅
-const home = require("../../home");
+const home = require("./home");
 
 // 앱 세팅
 app.set("views", "./views");
