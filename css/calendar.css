@@ -125,7 +125,7 @@ header {
 }
 
 .time > textarea {
-  width: 32%;
+  width: 40%;
   margin-top: 20px;
   border: none; 
   padding: 5px 0; 
@@ -237,11 +237,17 @@ header {
   }
 
   .encourage {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .meal-time-increase {
     font-size: 13px;
     width: 80%;
+  }
+  #meal-text {
+    font-size: 10px;
+  }
+  .time {
+    margin-left: 5%;
   }
 }
